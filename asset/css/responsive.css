@@ -1,0 +1,296 @@
+@media only screen and (max-width: 1599px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+    #site-navigation{
+        display: none;
+    }
+    .head-right .icon-bar{
+        display: block;
+    }
+    .icon-search{
+        margin-bottom: 0;
+    }
+    .content-bt-banner{
+        width: 100%;
+    }
+    #video-home{
+        min-height: 600px;
+    }
+    .item-img-animation img:nth-child(1) {
+        width: 220px;
+    }
+    .item-img-animation img:nth-child(2) {
+        left: 115px;
+        top: -95px;
+        width: 200px;
+    }
+    .item-img-animation img:nth-child(3) {
+        right: -30px;
+        width: 175px;
+    }
+    .item-product .left-product {
+        padding: 100px 0;
+    }
+    .item-product .content-left {
+        width: 70%;
+    }
+    .list-product .item-product:nth-child(even) .right-product .list-img-thuoc img {
+        width: 175px;
+        right: 100px;
+    }
+    .list-product .item-product:nth-child(odd) .right-product .list-img-thuoc{
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+    .left-pro .ct {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .item-img-animation img:nth-child(3) {
+        right: -15px;
+    }
+    #banner {
+        min-height: 560px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .item-img-animation img:nth-child(1) {
+        width: 200px;
+    }
+    .item-img-animation img:nth-child(2) {
+        left: 100px;
+        top: -85px;
+        width: 180px;
+    }
+    .item-img-animation img:nth-child(3) {
+        right: -60px;
+        width: 150px;
+    }
+    .list-img-thuoc img {
+        width: 200px;
+    }
+    .list-img-thuoc img:nth-child(2) {
+        width: 180px;
+    }
+    .list-product .item-product:nth-child(even) .right-product .list-img-thuoc img{
+        width: 165px;
+    }
+    .item-product .left-product {
+        padding: 70px 0;
+    }
+    #video-home {
+        min-height: 550px;
+    }
+    .ct-branch h4{
+        height: 250px;
+    }
+    .item.active .ct-branch h4 {
+        height: 280px;
+    }
+    .content-copyright{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .content-list-product .item-product-p{
+        flex-direction: column-reverse;
+        padding: 30px 0;
+    }
+    .left-pro .ct {
+        width: 100%;
+    }
+    .item-product-p .left-pro{
+        margin-top: 40px;
+    }
+    .content-list-product .item-product-p:nth-child(even) .left-pro {
+        order: 1;
+    }
+    .content-form{
+        flex-direction: column;
+    }
+    .content-form .right-form{
+        height: 500px;
+        background-position: center;
+    }
+    .shortcode-form {
+        padding: 56px 0;
+
+    }
+
+}
+@media only screen and (max-width: 800px) {
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .content-menu-mobile #site-navigation{
+        display: block;
+    }
+    .content-menu-mobile{
+        padding: 100px 15px 15px 15px;
+    }
+    .content-menu-mobile .main-navigation ul{
+        flex-direction: column;
+    }
+    .content-menu-mobile .main-navigation .menu li {
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+    .content-menu-mobile .main-navigation .menu li.menu-item-has-children:after{
+        right: 0;
+    }
+    .content-menu-mobile .main-navigation .menu li .sub-menu{
+        background-color: #fff;
+        padding: 0;
+        padding-left: 25px;
+        box-shadow: none;
+        border-radius: 0;
+        margin-top: 0;
+    }
+    .content-menu-mobile .main-navigation .menu li .sub-menu li{
+        padding: 0;
+        border:none
+    }
+    .content-menu-mobile .main-navigation .menu li .sub-menu li a{
+        padding-bottom: 0;
+    }
+    .main-navigation ul {
+        display: flex;
+    }
+    #masthead{
+        padding:24px 0;
+    }
+    #video-home {
+        min-height: 400px;
+    }
+    .list-thuong-hieu {
+        flex-direction: column;
+    }
+    .ct-branch p{
+        display: block;
+    }
+    .ct-branch h4 span {
+        width: 40%;
+    }
+    .item.active .ct-branch h4 {
+        height: 350px;
+    }
+    .ct-branch h4 {
+        height: 350px;
+    }
+    .list-thuong-hieu .item {
+        margin-bottom: 40px;
+    }
+    .item-product .left-product {
+        padding: 50px 0;
+    }
+    .list-thuong-hieu{
+        padding-top: 0;
+    }
+    .item-blog{
+        margin-bottom: 32px;
+        box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.12);
+    }
+    .item-blog .thumbnail img{
+        width: 100%;
+    }
+    .content-item-blog{
+        border-radius: 0 0 8px 8px;
+    }
+    .des-footer{
+        padding-bottom: 56px;
+    }
+    .ct-mid{
+        padding-bottom: 50px;
+        padding-left: 0;
+    }
+    #banner {
+        min-height: 850px;
+        display: block;
+    }
+    #banner .content-left{
+        padding-top: 80px;
+    }
+    .item-img-animation img:nth-child(1){
+        top: 150px;
+    }
+    .item-img-animation img:nth-child(2){
+        top: 55px;
+    }
+    .item-img-animation img:nth-child(3){
+        top: 180px;
+        left: 250px;
+    }
+    .item-product{
+        display: block;
+    }
+    .item-product .right-product{
+        min-height: 500px;
+        justify-content: center;
+    }
+    .list-product .item-product:nth-child(odd) .right-product .list-img-thuoc{
+        margin-left: -70px;
+        margin-top: 50px;
+    }
+    .list-product .item-product:nth-child(even) .right-product{
+        justify-content: center;
+    }
+    .list-product .item-product:nth-child(even) .right-product .list-img-thuoc img{
+        right: 0;
+    }
+    #video-home{
+        margin-top: 24px;
+    }
+    .blog-top{
+        justify-content: center;
+    }
+    .blog-top .read-more-light{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .des-title{
+        font-size: 18px;
+    }
+    .title-font{
+        font-size: 30px;
+    }
+    #video-home {
+        margin-top: 24px;
+    }
+    .item-product .content-left {
+        width: 90%;
+    }
+    .left-copy{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .item-product .right-product{
+        min-height: 450px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 375px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
