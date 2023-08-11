@@ -14,7 +14,11 @@ $args = array(
 ?>
 
 <div class="container-product">
-	<div class="head-product">
+	<div class="head-product"
+		 data-aos="fade-up"
+		 data-aos-duration="1000"
+		 data-aos-easing="ease-in-sine"  data-aos-delay="50"
+	>
 		<h2><?php echo $title; ?></h2>
 		<p><?php echo $desciption; ?></p>
 	</div>
@@ -22,9 +26,6 @@ $args = array(
 	<?php
 	if($loop->have_posts()) : ?>
 		<div class="list-product-tax"
-<!--			 data-aos="fade-left"-->
-<!--			 data-aos-duration="1000"-->
-<!--			 data-aos-easing="ease-in-sine"  data-aos-delay="50"-->
 		>
 			<div class="container">
 				<div class="row">
@@ -37,7 +38,11 @@ $args = array(
 								$video = get_field( "video", get_the_ID());
 							?>
 								<div class="item-product-p">
-									<div class="left-pro">
+									<div class="left-pro"
+										 data-aos="fade-right"
+										 data-aos-duration="1000"
+										 data-aos-easing="ease-in-sine"  data-aos-delay="50"
+									>
 										<div class="ct">
 											<div class="icon-pro">
 												<img src="<?php echo $thumbnail['url']; ?>" alt="">
@@ -53,9 +58,12 @@ $args = array(
 										</div>
 									</div>
 									<div class="right-pro"
+										 data-aos="fade-left"
+										 data-aos-duration="1000"
+										 data-aos-easing="ease-in-sine"  data-aos-delay="50"
 									>
 										<div class="ct">
-											<video width="100%" height="100%" controls="">
+											<video width="100%" height="100%" controls poster="<?php bloginfo('template_url'); ?>/asset/images/bg-vd.svg">
 												<source src="<?php echo $video['url']; ?>" type="video/mp4">
 											</video>
 
@@ -76,9 +84,9 @@ $args = array(
 	<?php
 		if($shortcode_form){ ?>
 			<div class="shortcode-form"
-<!--				 data-aos="fade-right"-->
-<!--				 data-aos-duration="1000"-->
-<!--				 data-aos-easing="ease-in-sine"  data-aos-delay="50"-->
+				 data-aos="fade-down"
+				 data-aos-duration="1000"
+				 data-aos-easing="ease-in-sine"  data-aos-delay="50"
 			>
 				<div class="container">
 					<div class="row">

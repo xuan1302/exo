@@ -47,6 +47,16 @@
     .left-pro .ct {
         width: 80%;
     }
+    .head-tech p{
+        width: 50%;
+    }
+    .list-img-thuoc img{
+        width: 230px;
+    }
+    .list-img-thuoc img:nth-child(2){
+        width: 200px;
+        left: 110px;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -118,7 +128,9 @@
     }
     .shortcode-form {
         padding: 56px 0;
-
+    }
+    .list-tp {
+        gap: 20px;
     }
 
 }
@@ -128,7 +140,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+    #tab-product-head{
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -257,6 +271,46 @@
     .blog-top .read-more-light{
         display: none;
     }
+    .top-box {
+        gap: 40px;
+        padding: 48px 0;
+        flex-direction: column;
+    }
+    .top-box .thumbnail, .top-box .des, .top-box .thumbnail img {
+        width: 100%;
+    }
+    .list-tp{
+        display: block;
+    }
+    .list-tp .item-tp{
+        float: left;
+        width: 50%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .box-hq {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .box-hq .right-box{
+        width: 100%;
+        padding-left: 0;
+    }
+    .cure h5{
+        font-size: 16px;
+    }
+    .content-ttab h4{
+        font-size: 18px;
+    }
+    .box-booking .content {
+        width: 100%;
+    }
+    .head-tech p{
+        width: 100%;
+    }
+    .head-booking p{
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -275,11 +329,36 @@
     .left-copy{
         text-align: center;
     }
+    .list-td .item-td{
+        width: 100%;
+    }
+    .item-tech{
+        flex-direction: column;
+    }
+    .box-tech-list .item-tech:nth-child(odd) .des {
+        order: 3;
+    }
+    .item-tech .des{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .item-product .right-product{
         min-height: 450px;
+    }
+    .content-form .right-form {
+        height: 474px;
+    }
+    .box-booking .content {
+        padding-top: 40px;
+        width: 95%;
+    }
+    .icon-gn-book {
+        margin-bottom: 35px;
+    }
+    .content-booking {
+        margin-bottom: 40px;
     }
 }
 
