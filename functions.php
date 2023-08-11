@@ -179,3 +179,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 require get_template_directory() . '/inc/custom-functions.php';
 
 require get_template_directory() . '/inc/custom-postype.php';
+
+function myFunction() {?>
+    <script>
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+    </script><?php
+}
