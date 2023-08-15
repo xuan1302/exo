@@ -4,11 +4,6 @@ define( 'HOME_URL', trailingslashit( home_url() ) );
 define( 'THEME_DIR', trailingslashit( get_template_directory() ) );
 define( 'THEME_URL', trailingslashit( get_template_directory_uri() ) );
 
-if( function_exists('acf_add_options_page') ) {
-
-    acf_add_options_page();
-
-}
 function vts_custom_jquery() {
     wp_deregister_script('jquery');
     wp_register_script('jquery', ("https://code.jquery.com/jquery-2.2.4.min.js"), false);
