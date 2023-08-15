@@ -16,7 +16,7 @@ $section_mobile = get_field("section_mobile")
                     <h1>Về NovaBeauty</h1>
                 </div>
                 <div class="row">
-                    <div class="section-left col-xl-5">
+                    <div class="section-left col-xl-5 col-12">
                         <div class="inner">
                             <img class="image-active" src="<?php echo $list_active[0]['icon']['url']?>"/>
                         </div>
@@ -41,24 +41,24 @@ $section_mobile = get_field("section_mobile")
                                 <span class="storynav__progressline storynav__progressline--dashed"></span>
                             </div>
                         </nav>
-                        <div class="section-mobile">
-                            <?php
-                            if(count($section_mobile) > 0){
-                                foreach($section_mobile as $item){?>
-                                    <div class="inner">
-                                        <div class="img">
-                                            <img src="<?php echo $item['image']['url'] ?>" alt=""/>
-                                        </div>
-                                        <div class="title">
-                                            <h1><?php echo $item['title'] ?></h1>
-                                        </div>
-                                        <div class="des">
-                                            <p><?php echo $item['des'] ?></p>
-                                        </div>
-                                    </div>
-                                <?php }
-                            }?>
-                        </div>
+<!--                        <div class="section-mobile">-->
+<!--                            --><?php
+//                            if(count($section_mobile) > 0){
+//                                foreach($section_mobile as $item){?>
+<!--                                    <div class="inner">-->
+<!--                                        <div class="img">-->
+<!--                                            <img src="--><?php //echo $item['image']['url'] ?><!--" alt=""/>-->
+<!--                                        </div>-->
+<!--                                        <div class="title">-->
+<!--                                            <h1>--><?php //echo $item['title'] ?><!--</h1>-->
+<!--                                        </div>-->
+<!--                                        <div class="des">-->
+<!--                                            <p>--><?php //echo $item['des'] ?><!--</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                --><?php //}
+//                            }?>
+<!--                        </div>-->
                     </div>
                 </div>
             </div>

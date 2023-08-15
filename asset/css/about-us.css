@@ -197,34 +197,12 @@
     display: none;
 }
 @media only screen and (max-width: 768px) {
-    .section-left{
-        display: none;
-    }
-    .about-us-nav{
-        display: none;
-    }
-    .section-mobile{
-        display: block;
-        text-align: center;
-    }
     .content-about-us h1{
         font-size: 30px;
         margin: 0;
         padding-bottom: 24px;
     }
-    .section-mobile .img{
-        padding-bottom: 24px;
-    }
-    .section-mobile .des p{
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        margin: 0;
-    }
-    .section-mobile .inner{
-        margin-bottom: 48px;
-    }
+
     .section-mobile .inner:last-child{
         margin: 0;
     }
