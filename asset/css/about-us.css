@@ -64,7 +64,7 @@
 #about-us .list-item .title:before{
     display: inline-block;
     transition: all .3s;
-    content: url('../images/vector-water.svg');
+    content: url('../images/Vector-water.svg');
     z-index: 10;
     margin-right: 32px;
 }
@@ -105,6 +105,7 @@
 }
 #expert{
     padding: 56px 0;
+    text-align: center;
 }
 #expert .item{
     padding: 0 36px;
@@ -132,6 +133,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 115px;
+    align-items: center;
 }
 .container-icon .contain{
     flex-grow: 1;
@@ -197,6 +199,22 @@
     display: none;
 }
 @media only screen and (max-width: 768px) {
+    #about-us{
+        margin-bottom: 86px
+    }
+    #about-us .nav-list{
+        padding: 0;
+    }
+    #about-us .list-item.active .des{
+        height: 180px;
+        padding-left: 47px;
+    }
+    #about-us .list-item .title:before{
+        margin-right: 29px;
+    }
+    #about-us .section-left{
+        margin-bottom: 24px;
+    }
     .content-about-us h1{
         font-size: 30px;
         margin: 0;
@@ -207,11 +225,13 @@
         margin: 0;
     }
     .expect-title{
-        margin: 0;
+        margin: 0 auto;
         padding-bottom: 40px;
+        max-width: 400px;
     }
     .expert-container .img{
-        padding-bottom: 24px;
+        padding: 0 106px;
+        margin-bottom: 24px;
     }
     .expert-container .item{
         margin-bottom: 48px;
@@ -221,14 +241,12 @@
     }
     .container-icon{
         padding-left: 0;
+        gap: 14px;
     }
     .container-icon .contain{
         padding: 0;
         width: 112px;
-        padding-bottom: 32px;
-    }
-    .container-icon .contain:nth-child(2), .contain:nth-child(5), .contain:nth-child(8){
-        margin: 0 14px;
+        padding-bottom: 18px;
     }
     .partner-title h2{
         font-size: 30px;
@@ -245,6 +263,40 @@
     }
     .profile-title{
         margin-bottom: 16px;
+    }
+    #expert{
+        text-align: center;
+    }
+    .expert-container{
+        max-width: 720px
+    }
+    .profile-container{
+        max-width: 720px
+    }
+    .expert-container .name span{
+        font-size: 18px;
+    }
+    #expert .item{
+        padding: 0 15px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    #about-us .section-left{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    #expert .item{
+        margin-bottom: 48px;
+    }
+    .expert-container{
+        max-width: 960px;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .container-icon .contain{
+        width: unset;
+        min-width: 30%;
     }
 }
 @media (min-width: 375px) and (max-width: 600px){
