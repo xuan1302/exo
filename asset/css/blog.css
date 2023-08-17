@@ -83,3 +83,17 @@
     background: #F5F5F5;
     color: #324894;
 }
+@media only screen and (max-width: 768px) {
+    .page-header-cat a{
+        font-size: 36px;
+    }
+    .page-header-cat{
+        padding: 32px 0;
+    }
+    .content-page-blog{
+        padding: 48px 0;
+    }
+    .page-header-cat h2{
+        margin: 0;
+    }
+}

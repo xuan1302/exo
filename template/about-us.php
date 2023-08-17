@@ -6,7 +6,8 @@ $expect_item = get_field("expect_item");
 $partner_image = get_field("partner-image");
 $profile_list = get_field("profile_list");
 $expect_description = get_field("expect-description");
-$section_mobile = get_field("section_mobile")
+$section_mobile = get_field("section_mobile");
+$shortcode_form = get_field( "shortcode_form" );
 ?>
 <div class="template-about-us">
     <div class="content-about-us">
@@ -41,24 +42,6 @@ $section_mobile = get_field("section_mobile")
                                 <span class="storynav__progressline storynav__progressline--dashed"></span>
                             </div>
                         </nav>
-<!--                        <div class="section-mobile">-->
-<!--                            --><?php
-//                            if(count($section_mobile) > 0){
-//                                foreach($section_mobile as $item){?>
-<!--                                    <div class="inner">-->
-<!--                                        <div class="img">-->
-<!--                                            <img src="--><?php //echo $item['image']['url'] ?><!--" alt=""/>-->
-<!--                                        </div>-->
-<!--                                        <div class="title">-->
-<!--                                            <h1>--><?php //echo $item['title'] ?><!--</h1>-->
-<!--                                        </div>-->
-<!--                                        <div class="des">-->
-<!--                                            <p>--><?php //echo $item['des'] ?><!--</p>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                --><?php //}
-//                            }?>
-<!--                        </div>-->
                     </div>
                 </div>
             </div>
@@ -131,6 +114,21 @@ $section_mobile = get_field("section_mobile")
                 </div>
             </div>
         </section>
+        <?php
+        if($shortcode_form){ ?>
+        <div class="shortcode-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <?php
+                        echo do_shortcode($shortcode_form);
+                        ?>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <?php }
+    ?>
     </div>
 </div>
 <?php get_footer();

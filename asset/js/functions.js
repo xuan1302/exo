@@ -35,5 +35,11 @@
       ]
     });
   });
+  $(window).resize(function() {
+    var width = $(window).width();
+    // if (width < 768){
+    //   alert('Your screen is too small');
+    // }
+  });
 })(jQuery);
 
