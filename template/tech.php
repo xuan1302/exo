@@ -25,7 +25,7 @@ $list_item_tech = get_field( "list_item_tech" );
 										<div class="thumbnail">
 											<img src="<?php echo $item['thumbnail']['url']; ?>" alt="">
 										</div>
-										<div class="des"><?php echo $item['description'] ?></div>
+										<div class="des"><span><?php echo $item['description'] ?></span></div>
 									</div>
 								<?php }
 								?>

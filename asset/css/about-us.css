@@ -64,7 +64,7 @@
 #about-us .list-item .title:before{
     display: inline-block;
     transition: all .3s;
-    content: url('../images/vector-water.svg');
+    content: url('../images/Vector-water.svg');
     z-index: 10;
     margin-right: 32px;
 }

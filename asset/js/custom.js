@@ -67,4 +67,22 @@
 	if(count == 5){
 		$('.list-td .item-td:nth-child(5)').addClass('w100')
 	}
+
+	if(jQuery(window).width() < 767) {
+		$('.list-thuong-hieu li').removeClass('active');
+		$('.list-thuong-hieu li:first-child').addClass('active');
+
+		//slide blog mobile
+		var swiper = new Swiper(".slide-mobile-home", {
+			slidesPerView: "auto",
+			spaceBetween: 15,
+			loop:true,
+			pagination: {
+				el: ".blog-pagination",
+				clickable: true,
+			},
+		});
+
+	}
+
 }(jQuery));

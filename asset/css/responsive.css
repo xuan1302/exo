@@ -57,6 +57,9 @@
         width: 200px;
         left: 110px;
     }
+    .list-img-thuoc img:nth-child(1){
+        right: 0;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -97,7 +100,7 @@
         min-height: 550px;
     }
     .ct-branch h4{
-        height: 250px;
+        height: 280px;
     }
     .item.active .ct-branch h4 {
         height: 280px;
@@ -190,18 +193,18 @@
     .list-thuong-hieu {
         flex-direction: column;
     }
-    .ct-branch p{
-        display: block;
-    }
+    /*.ct-branch p{*/
+    /*    display: block;*/
+    /*}*/
     .ct-branch h4 span {
         width: 40%;
     }
     .item.active .ct-branch h4 {
-        height: 350px;
+        height: 320px;
     }
-    .ct-branch h4 {
-        height: 350px;
-    }
+    /*.ct-branch h4 {*/
+    /*    height: 350px;*/
+    /*}*/
     .list-thuong-hieu .item {
         margin-bottom: 40px;
     }
@@ -212,6 +215,7 @@
         padding-top: 0;
     }
     .item-blog{
+        /*border-radius: 8px 8px 0 0;*/
         margin-bottom: 32px;
         box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.12);
     }
@@ -311,11 +315,56 @@
     .head-booking p{
         font-size: 30px;
     }
+    .content-form .lefr-form{
+        padding: 0;
+    }
+    .box-tech-list .item-tech:nth-child(even) .des span{
+        width: 100%;
+        text-align: center;
+    }
+    .box-tech-list .item-tech:nth-child(odd) .des span{
+        width: 100%;
+        text-align: center;
+    }
+    .list-product .item-product:nth-child(even) .left-product{
+        justify-content: center;
+    }
+    .list-product .item-product:nth-child(even) .left-product .content-left{
+        width: 70%;
+    }
+    .link-more-mobile{
+        display: block;
+        margin-top: 30px;
+    }
+    .blog-pagination{
+        text-align: center;
+    }
+    .blog-pagination .swiper-pagination-bullet-active{
+        background-color: #324894;
+        width: 50px;
+        border-radius: 4px;
+    }
+    #footer-menu > li{
+        width: 50%;
+        float: left;
+    }
+    #banner .content-left .icon-title img{
+        width: 245px;
+    }
+    .list-product .item-product:nth-child(odd){
+        background-image: url("../images/bg2.webp")!important;
+    }
+
+    .list-product .item-product:nth-child(even){
+        background-image: url("../images/bg1.webp")!important;
+    }
 }
 
 @media only screen and (max-width: 575px) {
     .des-title{
         font-size: 18px;
+        width: 286px;
+        margin-bottom: 32px;
     }
     .title-font{
         font-size: 30px;
@@ -341,6 +390,49 @@
     .item-tech .des{
         width: 100%;
     }
+    #video-home {
+        min-height: 242px;
+    }
+    #content-bottom-banner .title-font{
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .content-bt-banner .des{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .list-product .item-product:nth-child(even) .left-product .content-left{
+        width: 90%;
+    }
+    .logo-footer img{
+        width: 264px;
+    }
+    .des-footer{
+        width: 250px;
+    }
+    #banner .content-left{
+        padding-top: 50px;
+    }
+    .item-img-animation{
+        margin-top: -60px;
+    }
+    #banner {
+        min-height: 750px;
+    }
+    .list-product .item-product:nth-child(odd){
+        background-position: bottom;
+    }
+
+    .list-product .item-product:nth-child(even){
+        background-position: bottom;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #content-bottom-banner .title-font {
+        width: 55%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -360,10 +452,18 @@
     .content-booking {
         margin-bottom: 40px;
     }
+    #content-bottom-banner .title-font{
+        width: 60%;
+    }
+    .ct-branch h4{
+        font-size: 24px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
-
+    #content-bottom-banner .title-font {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 375px) {

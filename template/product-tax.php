@@ -63,7 +63,7 @@ $args = array(
 										 data-aos-easing="ease-in-sine"  data-aos-delay="50"
 									>
 										<div class="ct">
-											<video width="100%" height="100%" controls poster="<?php bloginfo('template_url'); ?>/asset/images/bg-vd.svg">
+											<video width="100%" height="100%" controls autoplay muted poster="<?php bloginfo('template_url'); ?>/asset/images/bg-vd.svg">
 												<source src="<?php echo $video['url']; ?>" type="video/mp4">
 											</video>
 
