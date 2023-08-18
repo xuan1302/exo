@@ -35,19 +35,16 @@
       ]
     });
   });
-  $(window).resize(function() {
-    var width = $(window).width();
-    if (width < 768){
-      $(document).ready(function () {
-        $('.related-post-content').slick({
-          dots: true,
-          infinite: true,
-          slidesToShow: 1.2,
-          slidesToScroll: 1,
-          arrows: false,
-        });
+  if(jQuery(window).width() < 768) {
+      var swiper = new Swiper(".related-post-content", {
+        slidesPerView: "auto",
+        loop:true,
+        pagination: {
+          el: ".blog-pagination",
+          clickable: true,
+        },
       });
-    }
-  });
+  }
+  $(".image-active").stop( true, true );
 })(jQuery);
 

@@ -47,7 +47,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.related-title-block  .show-all{
+.related-post .show-all{
     display: flex;
     padding: 8px 24px;
     justify-content: center;
@@ -56,7 +56,7 @@
     border-radius: 20px;
     border: 1px solid #324894;
 }
-.related-title-block .show-all a{
+.related-post .show-all a{
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -155,7 +155,34 @@
 .show-related .entry-title{
     margin-bottom: 32px;
 }
+.related-post .show-all-mobile{
+    display: none;
+}
+.show-related .item:hover .inner{
+    box-shadow: 2px 2px 16px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+.show-related .item:hover .entry-title h1{
+    color: #324894;
+}
+.readmore-block a:hover{
+    color: #324894;
+}
+.related-post .post-thumbnail{
+    overflow: hidden;
+}
+.related-post .post-thumbnail:hover img{
+    transform: scale(1.3);
+}
+.related-post .post-thumbnail img{
+    transition: 0.3s all;
+    border-radius: 8px 8px 0 0;
+}
 @media only screen and (max-width: 768px) {
+    .show-related .item{
+        width: 80%;
+        max-width: 80%;
+    }
     .content-single-page{
         padding: 48px 0;
     }
@@ -177,4 +204,29 @@
     .author .entry-meta{
         margin-bottom: 28px;
     }
+    .related-title-block .related-title a{
+        font-size: 36px;
+    }
+    .related-post .inner{
+        padding: 20px;
+    }
+    .show-related .entry-title{
+        margin-bottom: 24px;
+        height: 100px;
+    }
+    .related-post .show-all{
+        display: none;
+    }
+    .related-post .show-all-mobile{
+        display: flex;
+        width: 230px;
+        margin: 0 auto;
+        margin-top: 32px;
+        text-align: center;
+       align-items: center;
+    }
+    .related-title-block{
+        justify-content: center;
+    }
+
 }
