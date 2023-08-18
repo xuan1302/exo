@@ -15,7 +15,7 @@ $args = array(
 
 <div class="container-product">
 	<div class="head-product"
-		 data-aos="fade-up"
+		 data-aos="fade-down"
 		 data-aos-duration="1000"
 		 data-aos-easing="ease-in-sine"  data-aos-delay="50"
 	>
@@ -39,7 +39,7 @@ $args = array(
 							?>
 								<div class="item-product-p">
 									<div class="left-pro"
-										 data-aos="fade-right"
+										 data-aos="fade-down"
 										 data-aos-duration="1000"
 										 data-aos-easing="ease-in-sine"  data-aos-delay="50"
 									>
@@ -58,12 +58,12 @@ $args = array(
 										</div>
 									</div>
 									<div class="right-pro"
-										 data-aos="fade-left"
+										 data-aos="fade-down"
 										 data-aos-duration="1000"
 										 data-aos-easing="ease-in-sine"  data-aos-delay="50"
 									>
 										<div class="ct">
-											<video width="100%" height="100%" controls autoplay muted poster="<?php bloginfo('template_url'); ?>/asset/images/bg-vd.svg">
+											<video width="100%" height="100%" controls autoplay muted loop poster="<?php bloginfo('template_url'); ?>/asset/images/bg-vd.svg">
 												<source src="<?php echo $video['url']; ?>" type="video/mp4">
 											</video>
 
