@@ -37,9 +37,17 @@
   });
   $(window).resize(function() {
     var width = $(window).width();
-    // if (width < 768){
-    //   alert('Your screen is too small');
-    // }
+    if (width < 768){
+      $(document).ready(function () {
+        $('.related-post-content').slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          arrows: false,
+        });
+      });
+    }
   });
 })(jQuery);
 

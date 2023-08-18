@@ -167,7 +167,7 @@ if ( !function_exists( 'related_posts' ) ){
 
                     <?php } ?>
                 </div>
-                <div class="row">
+                <div class="row related-post-content">
 
                     <?php while ($related_post->have_posts()){
                         $related_post->the_post();
