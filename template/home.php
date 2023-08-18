@@ -98,7 +98,7 @@ $myposts_blog = get_posts( $args_blog );
 		        		<div class="list-product">
 		        			<?php 
 		        				foreach ($list_product as $value) { ?>
-				        			<div class="item-product">
+				        			<div class="item-product" style="background-image: url(<?php echo $value['background']['url']; ?>);">
 				        				<div class="left-product item">
 				        					<div class="content-left"
 									data-aos="fade-right"
@@ -118,7 +118,7 @@ $myposts_blog = get_posts( $args_blog );
 				        						</a>
 				        					</div>
 				        				</div>
-				        				<div class="right-product item" style="background-image: url(<?php echo $value['background']['url']; ?>);">
+				        				<div class="right-product item">
 				        					<div class="list-img-thuoc">
 				        						<?php 
 				        							if($value['image_1']){ ?> 
@@ -216,36 +216,46 @@ $myposts_blog = get_posts( $args_blog );
         			</div>
         			 <?php 
         					if($myposts_blog){ ?>
-        						<div class="row"
+        						<div class="row swiper slide-mobile-home"
 	        						data-aos="fade-down"
 		                            data-aos-duration="1000"
 		                            data-aos-easing="ease-in-sine"  data-aos-delay="50"
         						>
-        								<?php 
-        									foreach ($myposts_blog as $item) { ?>
-        										<div class="col-md-4 col-12">
-                                                    <div class="item-blog">
-                                                        <div class="thumbnail">
-                                                            <a href="<?php echo get_permalink($item->ID); ?>">
-                                                                <?php 
-                                                                    echo get_the_post_thumbnail($item->ID,'blog-thumbnail');
-                                                                ?>
-                                                            
-                                                            </a>
-                                                        
-                                                        </div>
-                                                        <div class="content-item-blog">
-                                                            <a href="<?php echo get_permalink($item->ID); ?>">
-                                                                <h4 class='post-title'><?php echo get_the_title($item->ID); ?></h4>
-                                                            </a>
+									<div class="swiper-wrapper">
+										<?php
+											foreach ($myposts_blog as $item) { ?>
+												<div class="col-md-4 item swiper-slide">
+													<div class="item-blog">
+														<div class="thumbnail">
+															<a href="<?php echo get_permalink($item->ID); ?>">
+																<?php
+																echo get_the_post_thumbnail($item->ID,'blog-thumbnail');
+																?>
 
-                                                            <a class="read-more" href="<?php echo get_permalink($item->ID); ?>">Đọc thêm</a>
-                                                        </div>
-                                                    </div>   
-                                                    </div>     										
-        									<?php }
-        								?>
+															</a>
+
+														</div>
+														<div class="content-item-blog">
+															<a href="<?php echo get_permalink($item->ID); ?>">
+																<h4 class='post-title'><?php echo get_the_title($item->ID); ?></h4>
+															</a>
+
+															<a class="read-more" href="<?php echo get_permalink($item->ID); ?>">Đọc thêm</a>
+														</div>
+													</div>
+												</div>
+											<?php }
+										?>
+									</div>
         						</div>
+								<div class="blog-pagination"></div>
+								<div class="text-center link-more-mobile">
+									<a class="read-more-light" href="<?php echo $link_blog; ?>">Xem thêm bài viết<svg width="15" height="15" viewBox="0 0 15 15" fill="#324894" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.77 1C0.77 0.585786 1.10579 0.25 1.52 0.25H14C14.4142 0.25 14.75 0.585786 14.75 1V13.48C14.75 13.8942 14.4142 14.23 14 14.23C13.5858 14.23 13.25 13.8942 13.25 13.48V2.81066L1.53033 14.5303C1.23744 14.8232 0.762563 14.8232 0.46967 14.5303C0.176777 14.2374 0.176777 13.7626 0.46967 13.4697L12.1893 1.75H1.52C1.10579 1.75 0.77 1.41421 0.77 1Z" fill=""></path>
+										</svg>
+									</a>
+								</div>
+
         					 <?php }
         				?>
         		</div>
