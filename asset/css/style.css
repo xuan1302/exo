@@ -1138,13 +1138,13 @@ font-size: 44px;
 .head-booking p{
     margin-bottom: 0;
 }
-.list-thuong-hieu .item:hover .ct-branch h4{
-    height: 357px;
-    font-size: 28px;
-}
-.list-thuong-hieu .item:hover .ct-branch p{
-    display: block;
-}
+/*.list-thuong-hieu .item:hover .ct-branch h4{*/
+/*    height: 357px;*/
+/*    font-size: 28px;*/
+/*}*/
+/*.list-thuong-hieu .item:hover .ct-branch p{*/
+/*    display: block;*/
+/*}*/
 .right-pro video::-webkit-media-controls {
     display: none;
 }

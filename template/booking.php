@@ -30,15 +30,6 @@ $video = get_field( "video" );
 				</div>
 			</div>
 		</div>
-<!--		<div id="video-home"-->
-<!--			 style="background-image: url(--><?php //echo $image_video['url']; ?>/*);">*/
-/*			<div class="icon-play text-center">*/
-/*				<img src="*/<?php //bloginfo('template_url'); ?><!--/asset/images/play.svg" alt="">-->
-<!--			</div>-->
-<!--			<video width="100%" height="100%" controls class="video-home">-->
-<!--				<source src="--><?php //echo $video['url']; ?><!--" type="video/mp4">-->
-<!--			</video>-->
-<!--		</div>-->
 	</div>
 <?php
 get_footer();
