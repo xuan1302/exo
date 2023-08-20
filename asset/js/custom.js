@@ -65,7 +65,12 @@
 	})
 	let count =  $('.list-td .item-td').length;
 	if(count == 5){
-		$('.list-td .item-td:nth-child(5)').addClass('w100')
+		$('.list-td').addClass('custom-col-2-3')
+	}
+
+	let count_item_manual =  $('.list-user-manual .item-manual').length;
+	if(count_item_manual == 8){
+		$('.list-user-manual').addClass('custom-col-4')
 	}
 
 	if(jQuery(window).width() < 767) {

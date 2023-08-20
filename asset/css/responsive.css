@@ -135,7 +135,21 @@
     .list-tp {
         gap: 20px;
     }
-
+    .list-user-manual .item-manual{
+        width: 49%;
+    }
+    .list-user-manual .item-manual:nth-child(4){
+        clear: none;
+    }
+    .list-user-manual .item-manual:nth-child(3){
+        clear: left;
+    }
+    .list-user-manual.custom-col-4 .item-manual{
+        width: 50%;
+    }
+    .list-td.custom-col-2-3 .item-td:nth-child(3), .list-td.custom-col-2-3 .item-td:nth-child(4), .list-td.custom-col-2-3 .item-td:nth-child(5){
+        width: 49%;
+    }
 }
 @media only screen and (max-width: 800px) {
 
@@ -358,6 +372,67 @@
     .list-product .item-product:nth-child(even){
         background-image: url("../images/bg1.webp")!important;
     }
+    .list-item-after {
+        flex-direction: column;
+    }
+    .content-hd .title-hd{
+        font-size: 18px;
+    }
+    .list-user-manual .item-manual .title{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .list-user-manual.custom-col-4 .item-manual .title{
+        width: 100%;
+    }
+    .list-production{
+        display: none;
+    }
+    .list-production-mobile{
+        display: block;
+        padding-left: 70px;
+        position: relative;
+    }
+    .list-production-mobile:after{
+        content: '';
+        position: absolute;
+        left: 35px;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #EDEDED;
+    }
+    .list-production-mobile .item-production{
+        margin-bottom: 48px;
+    }
+    .list-production-mobile .item-production .thumbnail img{
+        border-radius: 4px;
+    }
+    .list-production-mobile .item-production .thumbnail{
+        margin-bottom: 16px;
+    }
+    .list-production-mobile .item-production .step{
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #2E2E2E;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .list-production-mobile .item-production .title{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .list-production-mobile .item-production .step:after{
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 23px;
+        background-image: url(../images/water-active.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: -43px;
+        z-index: 9;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -427,6 +502,9 @@
     .list-product .item-product:nth-child(even){
         background-position: bottom;
     }
+    .list-td.custom-col-2-3 .item-td:nth-child(3), .list-td.custom-col-2-3 .item-td:nth-child(4), .list-td.custom-col-2-3 .item-td:nth-child(5){
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 560px) {
@@ -466,6 +544,10 @@
     }
     .ct-branch h4 span{
         width: 50%;
+    }
+    .link-detail-hd a.read-more-light {
+        padding: 8px 7px;
+        font-size: 13px;
     }
 }
 
