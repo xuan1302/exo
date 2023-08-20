@@ -267,7 +267,7 @@
         right: 0;
     }
     #video-home{
-        margin-top: 24px;
+        margin-top: 0;
     }
     .blog-top{
         justify-content: center;
@@ -370,7 +370,7 @@
         font-size: 30px;
     }
     #video-home {
-        margin-top: 24px;
+        margin-top: 0;
     }
     .item-product .content-left {
         width: 90%;
