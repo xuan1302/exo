@@ -164,14 +164,14 @@ if ( !function_exists( 'related_posts' ) ){
 
                     <?php } ?>
                 </div>
-                <div class="row">
-
+                <div class="row related-post-content swiper">
+                    <div class="swiper-wrapper">
                     <?php while ($related_post->have_posts()){
                         $related_post->the_post();
                         $url_thumbnail = get_the_post_thumbnail_url();
                         global $post;
                         ?>
-                        <article class="col-lg-4 col-md-6 col-12 item " id="post-<?php esc_attr(the_ID()); ?>" <?php post_class(); ?>>
+                        <article class="col-lg-4 col-md-6 col-12 item swiper-slide " id="post-<?php esc_attr(the_ID()); ?>" <?php post_class(); ?>>
                             <?php if (has_post_thumbnail()) : ?>
                                 <div class="entry-image">
                                     <div class="post-thumbnail">
@@ -194,7 +194,23 @@ if ( !function_exists( 'related_posts' ) ){
                             <?php endif; ?>
                         </article>
                     <?php } ?>
+                    </div>
                 </div>
+                <div class="blog-pagination "></div>
+                <?php $posttype = get_post_type();
+                if ( $posttype == 'post' ) {
+                    global $post;
+                    $categories = wp_get_post_categories(get_the_id(), array('orderby' => 'parent', ));
+                    $category_link = get_category_link( $categories[0] );
+                    ?>
+                    <div class="show-all show-all-mobile">
+                        <a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Xem thêm bài viết<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.77 6C5.77 5.58579 6.10579 5.25 6.52 5.25H19C19.4142 5.25 19.75 5.58579 19.75 6V18.48C19.75 18.8942 19.4142 19.23 19 19.23C18.5858 19.23 18.25 18.8942 18.25 18.48V7.81066L6.53033 19.5303C6.23744 19.8232 5.76256 19.8232 5.46967 19.5303C5.17678 19.2374 5.17678 18.7626 5.46967 18.4697L17.1893 6.75H6.52C6.10579 6.75 5.77 6.41421 5.77 6Z" fill="#324894"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                <?php } ?>
             </div>
 
         <?php   }

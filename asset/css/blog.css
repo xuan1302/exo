@@ -83,6 +83,26 @@
     background: #F5F5F5;
     color: #324894;
 }
+.item-post-archive .item:hover .content{
+    box-shadow: 2px 2px 16px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+.item-post-archive .item:hover .content h4{
+    color: #324894;
+}
+.item-post-archive .thumbnail{
+    overflow: hidden;
+}
+.item-post-archive .thumbnail:hover img{
+    transform: scale(1.3);
+}
+.item-post-archive .thumbnail img{
+    transition: 0.3s all;
+    border-radius: 8px 8px 0 0;
+}
+.item-post-archive .btn-readmore a:hover{
+    color: #324894;
+}
 @media only screen and (max-width: 768px) {
     .page-header-cat a{
         font-size: 36px;

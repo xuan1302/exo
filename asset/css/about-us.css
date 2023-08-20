@@ -12,7 +12,7 @@
 #about-us .about-us-nav{
     position: relative;
     width: 100%;
-    height: 266px;
+    height: 275px;
 }
 
 #about-us .nav-list{
@@ -74,7 +74,7 @@
 .storynav__progress{
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 52px;
     bottom: 0;
 }
 .storynav__progressline {
@@ -200,10 +200,16 @@
 }
 @media only screen and (max-width: 768px) {
     #about-us{
-        margin-bottom: 86px
+        margin-bottom: 0;
     }
     #about-us .nav-list{
         padding: 0;
+    }
+    .storynav__progress{
+        left: 10px;
+    }
+    #about-us .about-us-nav{
+        height: 360px;
     }
     #about-us .list-item.active .des{
         height: 180px;

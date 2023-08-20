@@ -19,7 +19,7 @@ $shortcode_form = get_field( "shortcode_form" );
                 <div class="row">
                     <div class="section-left col-xl-5 col-12">
                         <div class="inner">
-                            <img class="image-active" src="<?php echo $list_active[0]['icon']['url']?>"/>
+                            <img  class="image-active" src="<?php echo $list_active[0]['icon']['url']?>" />
                         </div>
                     </div>
                     <div class="section-right col-xl-7 col-12">

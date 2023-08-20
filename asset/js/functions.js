@@ -35,11 +35,16 @@
       ]
     });
   });
-  $(window).resize(function() {
-    var width = $(window).width();
-    // if (width < 768){
-    //   alert('Your screen is too small');
-    // }
-  });
+  if(jQuery(window).width() < 768) {
+      var swiper = new Swiper(".related-post-content", {
+        slidesPerView: "auto",
+        loop:true,
+        pagination: {
+          el: ".blog-pagination",
+          clickable: true,
+        },
+      });
+  }
+  $(".image-active").stop( true, true );
 })(jQuery);
 
