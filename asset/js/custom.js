@@ -80,7 +80,6 @@
 		//slide blog mobile
 		var swiper = new Swiper(".slide-mobile-home", {
 			slidesPerView: "auto",
-			spaceBetween: 15,
 			loop:true,
 			pagination: {
 				el: ".blog-pagination",
