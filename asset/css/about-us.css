@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'SVN-Wylie Voigen';
-    src: url('/font/SVN-WylieVoigen-Regular.woff2') format('woff2'),
-    url('/font/SVN-WylieVoigen-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 #about-us{
     padding: 56px 0;
 }
