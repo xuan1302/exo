@@ -365,7 +365,7 @@ width: 49%;
   margin-top: 24px;
 }
 #video-home{
-  min-height: 800px;
+  min-height: 480px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
