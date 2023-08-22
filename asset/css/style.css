@@ -372,6 +372,13 @@ width: 49%;
     position: relative;
     display: flex;
     align-items: center;
+    position: relative;
+}
+#video-home video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .icon-play{
   position: absolute;
@@ -407,6 +414,7 @@ width: 49%;
     background-position: center;
     background-repeat: no-repeat;
         padding-top: 95px;
+    transition: 0.6s all;
 }
 .ct-branch h4 span{
   display: block;
@@ -600,9 +608,9 @@ background: linear-gradient(152deg, #EBEBEB 0%, #FFF 71.80%);
 #footer-menu li:hover ul.sub-menu{
   display: block;
 }
-.video-home{
-  display: none;
-}
+/*.video-home{*/
+/*  display: none;*/
+/*}*/
 .show-video{
   background: transparent!important;
 }
@@ -1046,6 +1054,7 @@ font-size: 44px;
     color: #2E2E2E;
     font-family: SVN-Wylie Voigen;
     font-size: 44px;
+    margin-bottom: 20px;
 }
 .head-tech p{
     color: #2E2E2E;
@@ -1145,8 +1154,39 @@ font-size: 44px;
 /*.list-thuong-hieu .item:hover .ct-branch p{*/
 /*    display: block;*/
 /*}*/
-.right-pro video::-webkit-media-controls {
-    display: none;
+/*.right-pro video::-webkit-media-controls {*/
+/*    display: none;*/
+/*}*/
+video {
+    pointer-events: none;
+}
+
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    display:none !important;
+}
+
+video::-webkit-media-controls-panel {
+    display:none !important;
+}
+
+video::-webkit-media-slider-container {
+    display:none !important;
+}
+
+video::-moz-media-controls {
+    display:none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    display:none !important;
+}
+
+video::-moz-media-controls-panel {
+    display:none !important;
 }
 .content-hd .title-hd{
     color: #2E2E2E;

@@ -14,6 +14,7 @@ $list_content_after_use_product = get_field( "list_content_after_use_product", g
 $tab_production_process_left = get_field( "tab_production_process_left", get_the_ID());
 $tab_production_process_right = get_field( "tab_production_process_right", get_the_ID());
 $tab_production_process_mobile = get_field( "tab_production_process_mobile", get_the_ID());
+$title_tab_hieu_qua = get_field( "title_tab_hieu_qua", get_the_ID());
 ?>
 	<div class="product-box">
 		<div class="container">
@@ -76,7 +77,7 @@ $tab_production_process_mobile = get_field( "tab_production_process_mobile", get
 								<?php
 								if($tab_impact){ ?>
 									<div class="content-td content-ttab">
-										<h4>Tác động của ExoFresh lên da</h4>
+										<h4>Tác động của <?php echo the_title(); ?> lên da</h4>
 										<div class="list-td">
 											<?php
 											foreach ($tab_impact as $item){ ?>
@@ -94,7 +95,7 @@ $tab_production_process_mobile = get_field( "tab_production_process_mobile", get
 							</div>
 							<div id="hieuqua" class="item" style="display: none">
 								<div class="content-hq content-ttab">
-									<h4>Hoạt chất tăng trưởng và exosome tái tạo làn da khỏe mạnh toàn diện</h4>
+									<h4><?php echo $title_tab_hieu_qua; ?></h4>
 									<div class="box-hq">
 										<div class="thumbnail-animation">
 											<div class="wrapper">

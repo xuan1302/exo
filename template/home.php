@@ -146,12 +146,11 @@ $myposts_blog = get_posts( $args_blog );
 
 
         	<div id="video-home" 
-        	data-aos="fade-down" data-aos-duration="1000"
-        	style="background-image: url(<?php echo $image_video['url']; ?>);">
-        		<div class="icon-play text-center">
-        			<img src="<?php bloginfo('template_url'); ?>/asset/images/play.svg" alt="">
-        		</div>
-        		<video width="100%" height="100%" controls class="video-home">
+        	data-aos="fade-down" data-aos-duration="1000" >
+<!--        		<div class="icon-play text-center">-->
+<!--        			<img src="--><?php //bloginfo('template_url'); ?><!--/asset/images/play.svg" alt="">-->
+<!--        		</div>-->
+        		<video width="100%" height="100%" controls autoplay muted loop class="video-home" poster="<?php echo $image_video['url']; ?>">
 			        <source src="<?php echo $video['url']; ?>" type="video/mp4">   
 			    </video>
         	</div>
