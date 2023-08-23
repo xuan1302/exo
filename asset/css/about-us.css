@@ -91,6 +91,9 @@
 .expert-container{
     max-width: 1008px;
 }
+.expert-container .img{
+    margin-bottom: 24px;
+}
 #expert{
     padding: 56px 0;
     text-align: center;
