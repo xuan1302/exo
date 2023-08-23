@@ -58,7 +58,7 @@ $title_tab_hieu_qua = get_field( "title_tab_hieu_qua", get_the_ID());
 								<?php
 								if($tab_ingredient){ ?>
 									<div class="content-tp content-ttab">
-										<h4>Thành phần hoạt chất tăng trưởng</h4>
+										<h4>Thành phần hoạt chất tăng trưởng</h4>
 										<div class="list-tp">
 											<?php
 											foreach ($tab_ingredient as $item){ ?>
@@ -77,7 +77,7 @@ $title_tab_hieu_qua = get_field( "title_tab_hieu_qua", get_the_ID());
 								<?php
 								if($tab_impact){ ?>
 									<div class="content-td content-ttab">
-										<h4>Tác động của <?php echo the_title(); ?> lên da</h4>
+										<h4>Tác động của <?php echo the_title(); ?> lên da</h4>
 										<div class="list-td">
 											<?php
 											foreach ($tab_impact as $item){ ?>
@@ -127,7 +127,7 @@ $title_tab_hieu_qua = get_field( "title_tab_hieu_qua", get_the_ID());
 							</div>
 							<div id="huongdan" class="item" style="display: none">
 								<div class="content-ttab content-hd">
-									<h4 class="title-hd">Hướng dẫn sử dụng <?php echo the_title(); ?></h4>
+									<h4 class="title-hd">Hướng dẫn sử dụng <?php echo the_title(); ?></h4>
 									<?php
 										if($tab_user_manual){ ?>
 											<div class="list-user-manual clearfix">
