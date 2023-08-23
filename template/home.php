@@ -33,7 +33,7 @@ $myposts_blog = get_posts( $args_blog );
         		<div class="container">
         			<div class="row">
         				<div class="col-12 col-md-6"
-									data-aos="fade-right"
+									data-aos="fade-down"
                                     data-aos-duration="1000"
                                     data-aos-easing="ease-in-sine"  data-aos-delay="50"
         				>
@@ -63,7 +63,7 @@ $myposts_blog = get_posts( $args_blog );
         									$run += 300;
         								 ?>
         									<img 
-        									data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="<?php echo $run; ?>"
+        									data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="<?php echo $run; ?>"
         									src="<?php echo $item['thumbnail']['url']?>" alt="">
         								<?php }
         							}
@@ -77,7 +77,7 @@ $myposts_blog = get_posts( $args_blog );
         	<div id="content-bottom-banner">
         		<div class="container">
         			<div class="row" 
-							data-aos="fade-up"
+							data-aos="fade-down"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-sine"  data-aos-delay="50"
         			>
@@ -101,7 +101,7 @@ $myposts_blog = get_posts( $args_blog );
 				        			<div class="item-product" style="background-image: url(<?php echo $value['background']['url']; ?>);">
 				        				<div class="left-product item">
 				        					<div class="content-left"
-									data-aos="fade-right"
+									data-aos="fade-down"
                                     data-aos-duration="1000"
                                     data-aos-easing="ease-in-sine"  data-aos-delay="50"
 				        					>
@@ -123,13 +123,13 @@ $myposts_blog = get_posts( $args_blog );
 				        						<?php 
 				        							if($value['image_1']){ ?> 
 				        								<img 
-				        								data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300"
+				        								data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300"
 				        								src="<?php echo $value['image_1']['url']; ?>" alt="">
 				        							<?php }
 
 				        							if($value['image_2']){ ?> 
 				        								<img 
-				        								data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600"
+				        								data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600"
 				        								src="<?php echo $value['image_2']['url']; ?>" alt="">
 				        							<?php }
 				        						?>
@@ -146,12 +146,11 @@ $myposts_blog = get_posts( $args_blog );
 
 
         	<div id="video-home" 
-        	data-aos="zoom-in" data-aos-duration="1000"
-        	style="background-image: url(<?php echo $image_video['url']; ?>);">
-        		<div class="icon-play text-center">
-        			<img src="<?php bloginfo('template_url'); ?>/asset/images/play.svg" alt="">
-        		</div>
-        		<video width="100%" height="100%" controls class="video-home">
+        	data-aos="fade-down" data-aos-duration="1000" >
+<!--        		<div class="icon-play text-center">-->
+<!--        			<img src="--><?php //bloginfo('template_url'); ?><!--/asset/images/play.svg" alt="">-->
+<!--        		</div>-->
+        		<video width="100%" height="100%" controls autoplay muted loop class="video-home" poster="<?php echo $image_video['url']; ?>">
 			        <source src="<?php echo $video['url']; ?>" type="video/mp4">   
 			    </video>
         	</div>
@@ -161,7 +160,7 @@ $myposts_blog = get_posts( $args_blog );
         				<div class="col-12">
         					<div class="content-th">
 	        					<h3 
-	        						data-aos="fade-up"
+	        						data-aos="fade-down"
 		                            data-aos-duration="1000"
 		                            data-aos-easing="ease-in-sine"  data-aos-delay="50"
 	        					class="title-font text-center"><?php echo $title_thuong_hieu; ?></h3>
@@ -201,7 +200,7 @@ $myposts_blog = get_posts( $args_blog );
         			<div class="row">
         				<div class="col-12">
 	        				<div class="blog-top"
-	        						data-aos="fade-up"
+	        						data-aos="fade-down"
 		                            data-aos-duration="1000"
 		                            data-aos-easing="ease-in-sine"  data-aos-delay="50"
 	        				>
