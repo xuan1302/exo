@@ -1,6 +1,11 @@
 @media only screen and (max-width: 1599px) {
 
 }
+@media only screen and (max-width: 1440px) {
+    .left-product ul{
+        width:116%;
+    }
+}
 
 @media only screen and (max-width: 1199px) {
     #site-navigation{
@@ -149,6 +154,9 @@
     }
     .list-td.custom-col-2-3 .item-td:nth-child(3), .list-td.custom-col-2-3 .item-td:nth-child(4), .list-td.custom-col-2-3 .item-td:nth-child(5){
         width: 49%;
+    }
+    .left-product ul{
+        width:100%;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -433,8 +441,10 @@
         left: -43px;
         z-index: 9;
     }
+    #video-home video{
+        position: initial;
+    }
 }
-
 @media only screen and (max-width: 575px) {
     .des-title{
         font-size: 18px;

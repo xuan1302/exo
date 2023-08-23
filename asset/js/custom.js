@@ -87,6 +87,11 @@
 			},
 		});
 
+		$(window).resize(function() {
+			let video_home = $("#video-home video" ); //JQuery selector
+			let heightVideo = video_home[0].offsetHeight;
+			$('#video-home').css('min-height',heightVideo + 'px')
+		});
 	}
 
 	$('.list-thuong-hieu .item').hover(
